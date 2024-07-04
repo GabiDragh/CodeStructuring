@@ -1,11 +1,7 @@
 import './style.css'
 import Experience from './Experience/Experience.js'
 
-const experience = new Experience()
-
-
-
-
+const experience = new Experience(document.querySelector('canvas.webgl'))  // Experience needs a canvas that can be modified by someone else working on the project
 
 // import * as THREE from 'three'
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
