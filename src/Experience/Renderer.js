@@ -5,7 +5,7 @@ import Experience from "./Experience.js"
 export default class Renderer {
     constructor() {
         this.experience = new Experience()
-        console.log('all good')
+        // console.log('all good')
         this.canvas = this.experience.canvas
         this.sizes = this.experience.sizes
         this.scene = this.experience.scene

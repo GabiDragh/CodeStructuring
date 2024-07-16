@@ -10,7 +10,7 @@ import Experience from "./Experience.js"
 export default class Camera {
 
     constructor() {
-        console.log('My camera')
+        // console.log('My camera')
 
         // a. global variable ->  Simplest, but even if it works, it is not best practice to work on window properties as external code can mess it up
         // this.experience = window.experience
@@ -33,7 +33,7 @@ export default class Camera {
 
         // We need to update the camera when resize occurs. We could listen to the resize event on the Sizes class here, but instead it is better to propagate it from the Experience to its children (already present there)
 
-        console.log(this)
+        // console.log(this)
     }
 
     // Create separate methods just to keep things 'in boxes'
@@ -54,11 +54,11 @@ export default class Camera {
     setOrbitControls() {
     this.controls = new OrbitControls(this.instance, this.canvas)
     this.controls.enableDamping = true //smoother movement
-    console.log(this.controls)
+    // console.log(this.controls)
     }
 
     resize() {
-        console.log('resize on the camera')
+        // console.log('resize on the camera')
         this.instance.aspect = this.sizes.width/this.sizes.height
         this.instance.updateProjectionMatrix()
     }

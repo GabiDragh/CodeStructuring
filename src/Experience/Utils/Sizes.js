@@ -3,7 +3,7 @@ import EventEmitter from "./EventEmitter.js";
 
 export default class Sizes extends EventEmitter {
     constructor() {
-        console.log('ayo')
+        // console.log('ayo')
 
         super() //-> inherit from EvenetEmitter
 
@@ -12,7 +12,7 @@ export default class Sizes extends EventEmitter {
         this.height = window.innerHeight;
         this.pixelRatio = Math.min(window.devicePixelRatio, 2) 
 
-        console.log(this)
+        // console.log(this)
 
         // Resize events
         window.addEventListener('resize', () => {

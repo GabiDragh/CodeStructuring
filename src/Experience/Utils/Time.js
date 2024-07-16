@@ -8,11 +8,11 @@ export default class Time extends EventEmitter {
     constructor() {
         super() // -> to extend the emitter
 
-        console.log('This is the emitter')
+        // console.log('This is the emitter')
 
         // Setup
         this.start = Date.now()
-        console.log(this.start)
+        // console.log(this.start)
 
         this.current = this.start
         this.elapsed = 0
